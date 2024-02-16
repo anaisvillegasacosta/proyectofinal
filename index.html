@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UFT-8">
+    <meta name="viewport" content="width-device-width, initial-scale=1.0">
+    <meta name="Keywords" content="Reproductor, Música, Playlist">
+    <meta name="Description" content="Reproductor de música online gratis">
+    <meta name="Author" content="Anais Villegas">
+    <title> Reproductor de música</title>
+    <link rel="icon" href="/Activos/SVG/Logo.svg">
+    <link rel="stylesheet" href="/styles.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+
+<body>
+    <header class="py-2 px-4">
+        <nav class="flex justify-between">
+            <img src="/Activos/SVG/Logo.svg" alt="Logo">
+
+            <form class="flex gap-4">
+                <img src="/Activos/SVG/Lupa.svg" alt="Lupa">
+                <input type="text" placeholder="En qué Música estás pensando?">
+            </form>
+            <div class="flex items-center gap-4">
+                <img src="/Activos/JPG/Foto de usuario.jpg" alt="Foto Usuario">
+                <p class="min-w-max">Anais Villegas</p>
+                <img src="/Activos/SVG/Seleccionador de perfil.svg" alt="Seleccionador de perfil">
+            </div>
+
+        </nav>
+    </header>
+
+    <main>
+        <section class="py-8">
+            <div class="flex justify-center gap-2">
+                <h1 class="">TOP MÁS ESCUCHADO DE LA SEMANA</h1>
+            </div>
+            <div class="flex flex-col items-center">
+                <img src="/Activos/JPG/Group 1.jpg" class="w-full px-16 max-w-[1080px] py-6" alt="Foto principal">
+                <ul class="flex gap-12">
+                    <li>POP</li>
+                    <li>ROCK</li>
+                    <li>INDIE</li>
+                    <li>BLUES</li>
+                    <li>AFRO BEATS</li>
+                    <li>HIP HOP</li>
+                    <li>REGGAETÓN</li>
+                    <li>JAZZ</li>
+                    <li>RAP</li>
+                    <li>MORE</li>
+                </ul>
+            </div>
+        </section>
+
+        <section>
+            <h2 class="px-8">PLAYLIST</h2>
+            <div>
+                <ul class=" flex flex-wrap gap-8 p-8" id="Track-list">
+                </ul>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="py-2 px-4 flex items-center gap-4 justify-between">
+            <div class="flex gap-4 items-center">
+                <img src="/Activos/JPG/OIP 2.jpg" id="current-song-img" alt="Foto Ed Sheeran">
+                <ul class="flex-wrap gap-8">
+                    <li id="current-song-author">Ed Sheeran</li>
+                    <li id="current-song-album">Small Bump</li>
+                </ul>
+            </div>
+            <!-- <img src="/Activos/SVG/Group 3.svg" alt="Reproductor Play"> -->
+
+            <audio src="" id="current-song-audio" controls></audio>
+
+            <img src="/Activos/SVG/Frame.svg" alt="Icono final">
+        </div>
+    </footer>
+
+    <script src="service.js"></script>
+</body>
+
+</html>
